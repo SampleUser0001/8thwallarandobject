@@ -1,21 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- We've included a slightly modified version of A-Frame, which fixes some polish concerns -->
-    <script src="//cdn.8thwall.com/web/aframe/8frame-0.8.2.min.js"></script>
+  <!-- We've included a slightly modified version of A-Frame, which fixes some polish concerns -->
+  <script src="//cdn.8thwall.com/web/aframe/8frame-0.9.2.min.js"></script>
 
-    <!-- XR Extras - provides utilities like load screen, almost there, and error handling.
-            See github.com/8thwall/web/xrextras -->
-    <script src="//cdn.8thwall.com/web/xrextras/xrextras.js"></script>
+  <!-- XR Extras - provides utilities like load screen, almost there, and error handling.
+          See github.com/8thwall/web/xrextras -->
+  <script src="//cdn.8thwall.com/web/xrextras/xrextras.js"></script>
 
-    <script src="//apps.8thwall.com/xrweb?appKey=ElH3mvDLSqz5tc8qrHSYNf1khnLHqFNpmZKtW5aOCt1jcYkZLxcY9r9bUZJ7ic3fT4tTk"></script>
+  <script src="//apps.8thwall.com/xrweb?appKey=ElH3mvDLSqz5tc8qrHSYNf1khnLHqFNpmZKtW5aOCt1jcYkZLxcY9r9bUZJ7ic3fT4tTk"></script>
+
+  <!-- Other external scripts and meta tags can also be added. -->
+  <script src="//cdn.8thwall.com/web/aframe/aframe-extras-6.1.0.min.js"></script>
+  
+<!--  <script src="./app.js"></script> -->
+<!--  <script src="./bottom-circle.js"></script> -->
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+  <link rel="stylesheet" href="./bottom-circle.css">
+  
+  <script>
+    AFRAME.registerComponent('bottom-circle', {
+        init: function () {
+          const nextButton = document.getElementById('bottomCircleButton');
+          nextButton.style.display = 'block';
+        }
+    });
+  </script>
 </head>
 
 <body>
 <!-- Copyright (c) 2020 8th Wall, Inc. -->
 <!-- body.html is optional; elements will be added to your html body after app.js is loaded. -->
  
+<div id="bottomCircleButton" style="display: none; z-index: 10">
+  <a href="https://www.yahoo.co.jp"></a>
+</div>
+
 <a-scene
+  bottom-circle
   xrextras-gesture-detector
   xrextras-almost-there
   xrextras-loading
