@@ -14,3 +14,4 @@
 
 - [Qiita:CloudFront 経由で S3 のファイルにアクセスする](https://qiita.com/NaokiIshimura/items/46994e67b712831c3016)
     - CloudFrontの設定方法
+- [AWS ドキュメンテーション:Amazon AppFlow:ユーザーガイド](https://docs.aws.amazon.com/appflow/latest/userguide/requirements.html#google-analytics)
