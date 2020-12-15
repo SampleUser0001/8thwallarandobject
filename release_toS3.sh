@@ -1,6 +1,7 @@
 #!/bin/bash
 
-export S3_DIR=s3://ittimfn-public/AR/googleanalytics_cloudfront
+export S3_DIR=s3://ittimfn-8thwall-ar-and-object
+
 aws s3 rm ${S3_DIR} --recursive
 
 aws s3 cp app.js             ${S3_DIR}/

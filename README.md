@@ -4,4 +4,4 @@
 
 ### S3
 
-[https://ittimfn-public.s3-ap-northeast-1.amazonaws.com/AR/googleanalytics_cloudfront/index.html](https://ittimfn-public.s3-ap-northeast-1.amazonaws.com/AR/googleanalytics_cloudfront/index.html)
+[https://ittimfn-8thwall-ar-and-object.s3-ap-northeast-1.amazonaws.com/index.html](https://ittimfn-8thwall-ar-and-object.s3-ap-northeast-1.amazonaws.com/index.html)
